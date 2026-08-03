@@ -42,4 +42,4 @@ Get-ChildItem $sigPath | ForEach-Object {
         FechaCreacion  = $fechaCreacion
         UltimaConexion = $ultimaConexion
     }
-} | Format-Table -AutoSize >> %temp%\Wi-Fi-PASS.txt
+} | Format-Table -AutoSize >> Wi-Fi-PASS.txt
