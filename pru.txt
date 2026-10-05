@@ -1,0 +1,29 @@
+$pageToken = "EAAV3FGQ49RcBSlYXXihmBKEw2DDZBBGeXGCzwBqWIPMO1IdX9ZCJ9FHgopB6VZBZCExHpmjDfoTCKYeqe7iiwDOXzMEPdgSJWj0v9T9v7IrxsBnbxa6o96HFHif5BhYURO6M601YkCYaZBwCswl4DCLS5ZBPh8vcAa5lp5cqp6BtKZAKCGHWZBQevNYVjhMv7OGAJChPZBTxu0l1IZATHAdETA3EFTH1kYDcZAihXMw44y7AZAUZD"
+$pageId = "1409465942241201"
+$recipient = "28770859835885047"
+$file = "C:\Temp\Pedido.txt"
+$apiVersion = "v20.0"
+
+$fileContent = [System.IO.File]::ReadAllText(
+$file,
+[System.Text.Encoding]::UTF8
+)
+$body = @{
+recipient = @{
+id = $recipient
+}
+message = @{
+text = $fileContent
+}
+} | ConvertTo-Json -Depth 5
+
+$utf8Body = [System.Text.Encoding]::UTF8.GetBytes($body)
+$url = "https://graph.facebook.com/$apiVersion/$pageId/messages"
+$url = $url + "?access_token=$pageToken"
+$response = Invoke-RestMethod `
+-Uri $url `
+-Method Post `
+-ContentType "application/json; charset=utf-8" `
+-Body $utf8Body
+
+$response 
