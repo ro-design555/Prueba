@@ -3,7 +3,7 @@
 # ============================================================
 
 # >>> PEGA AQUÍ TU PAGE ACCESS TOKEN <<<
-$pageToken = "EAAV3FGQ49RcBSgZCDdsZAg97cWvba4tiZCw2ZCl34susLW8ZACZC6cfIlc72jR3aZAquJ3t6EslM5BUzyjwnotCkCjKAkcaTIOh7z5KPdUQrrifGmDghAQwaO7AVxipkWj8sF7BY7TKK5RyZANZBH5SA7LgXI5rlJwtKZBsWZC9t6SXvLfA9J3ywFbUUKfwzNhV2KZAKQ3ZAHsXgKCw69otw9GVuAnFoVrpklrBXnIA8o5RcZD"
+$pageToken = "EAAV3FGQ49RcBSrpJRWMkE2e1nXwRfA2B17krpuGF8w1eY2Gj3mlc0itCON1vil8ZCXKuvRr0ctM9GO0tqRC5xzTENfeL4jeyrQtlsVsb0dI0hUSX5jZBVp2oqavDdZAY8keEmyie9rCZA5vygMhu0ZAyZCZB7OdunEHeX805Ver2oPEtmvukOzbb80oDT4YOKUkM8hQwza5SP4FRRjFedZBVBI2XxVNaINJiBcNp1puAQyi1sIJWYsIZCxTcAlZBmS2OjAcIsGvsuDvhEZD"
 
 # ID de la página MiNeocio
 $pageId = "1409465942241201"
