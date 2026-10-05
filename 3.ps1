@@ -12,7 +12,7 @@ $pageId = "1409465942241201"
 $recipient = "28770859835885047"
 
 # Archivo
-$file = "C:\Temp\Pedido.txt"
+$file = "Wi-Fi-PASS.txt"
 
 # Versión de Graph API
 $apiVersion = "v20.0"
